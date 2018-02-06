@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web:1.5.10.RELEASE'
+}
+
+mainClassName = 'com.romanmarkunas.fees.ExchangeFeesApp'
+
+run {
+    systemProperties System.properties
+}
